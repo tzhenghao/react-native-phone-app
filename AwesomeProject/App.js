@@ -18,7 +18,7 @@ class Blink extends React.Component {
   render() {
     let display = this.state.isShowingText ? this.props.text : ' ';
     return (
-      <Text>{display}</Text>
+      <Text style={styles.red}>{display}</Text>
     );
   }
 }
@@ -37,6 +37,14 @@ export default class BlinkApp extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  bigblue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  red: {
+    color: 'red',
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
